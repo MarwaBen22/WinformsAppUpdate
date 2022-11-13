@@ -1,0 +1,803 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D7D9061A-66CE-41A1-A509-C1BD5BBBABFF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>GRHApp</RootNamespace>
+    <AssemblyName>GRHApp</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>logo-expertise.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\crudClass.cs" />
+    <Compile Include="Classes\dashboardClass.cs" />
+    <Compile Include="Classes\DGVPrinter.cs" />
+    <Compile Include="Forms\Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_Absence1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_Absence1.Designer.cs">
+      <DependentUpon>Form_Absence1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_Absences.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_Absences.Designer.cs">
+      <DependentUpon>Form_Absences.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_Attend.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_Attend.Designer.cs">
+      <DependentUpon>Form_Attend.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_AttesCert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_AttesCert.Designer.cs">
+      <DependentUpon>Form_AttesCert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_Conge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_Conge.Designer.cs">
+      <DependentUpon>Form_Conge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_Contract.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_Contract.Designer.cs">
+      <DependentUpon>Form_Contract.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_CRRenseign.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_CRRenseign.Designer.cs">
+      <DependentUpon>Form_CRRenseign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_Emp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_Emp.Designer.cs">
+      <DependentUpon>Form_Emp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_FPoste.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_FPoste.Designer.cs">
+      <DependentUpon>Form_FPoste.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_Justify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_Justify.Designer.cs">
+      <DependentUpon>Form_Justify.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_ModQualite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_ModQualite.Designer.cs">
+      <DependentUpon>Form_ModQualite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_Module.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_Module.Designer.cs">
+      <DependentUpon>Form_Module.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_QualiteUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_QualiteUpdate.Designer.cs">
+      <DependentUpon>Form_QualiteUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_QualityAM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_QualityAM.Designer.cs">
+      <DependentUpon>Form_QualityAM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_Recruit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_Recruit.Designer.cs">
+      <DependentUpon>Form_Recruit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_RecruitRequest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_RecruitRequest.Designer.cs">
+      <DependentUpon>Form_RecruitRequest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_SearchEmp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_SearchEmp.Designer.cs">
+      <DependentUpon>Form_SearchEmp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_SearchEmp1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_SearchEmp1.Designer.cs">
+      <DependentUpon>Form_SearchEmp1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_Service.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_Service.Designer.cs">
+      <DependentUpon>Form_Service.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_SignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_SignUp.Designer.cs">
+      <DependentUpon>Form_SignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_WorkCet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_WorkCet.Designer.cs">
+      <DependentUpon>Form_WorkCet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ResetPW.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ResetPW.Designer.cs">
+      <DependentUpon>ResetPW.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ResetPW1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ResetPW1.Designer.cs">
+      <DependentUpon>ResetPW1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Dashboard.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControls\UC_Absences.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_Absences.Designer.cs">
+      <DependentUpon>UC_Absences.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_ActivityJournal.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_ActivityJournal.Designer.cs">
+      <DependentUpon>UC_ActivityJournal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_Alerts.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_Alerts.Designer.cs">
+      <DependentUpon>UC_Alerts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_Attendance.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_Attendance.Designer.cs">
+      <DependentUpon>UC_Attendance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_Career.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_Career.Designer.cs">
+      <DependentUpon>UC_Career.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_CivilState.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_CivilState.Designer.cs">
+      <DependentUpon>UC_CivilState.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_Conge.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_Conge.Designer.cs">
+      <DependentUpon>UC_Conge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_Contract.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_Contract.Designer.cs">
+      <DependentUpon>UC_Contract.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_ContractInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_ContractInfo.Designer.cs">
+      <DependentUpon>UC_ContractInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_DashboardAttes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_DashboardAttes.Designer.cs">
+      <DependentUpon>UC_DashboardAttes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_DashboardCert.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_DashboardCert.Designer.cs">
+      <DependentUpon>UC_DashboardCert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_DashboardCong.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_DashboardCong.Designer.cs">
+      <DependentUpon>UC_DashboardCong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_DashboardFicheRenseign.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_DashboardFicheRenseign.Designer.cs">
+      <DependentUpon>UC_DashboardFicheRenseign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_Discipline.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_Discipline.Designer.cs">
+      <DependentUpon>UC_Discipline.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_DoYouKnow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_DoYouKnow.Designer.cs">
+      <DependentUpon>UC_DoYouKnow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_DRDashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_DRDashboard.Designer.cs">
+      <DependentUpon>UC_DRDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_Employe.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_Employe.Designer.cs">
+      <DependentUpon>UC_Employe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_Emprovement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_Emprovement.Designer.cs">
+      <DependentUpon>UC_Emprovement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_EndContract.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_EndContract.Designer.cs">
+      <DependentUpon>UC_EndContract.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_Evaluation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_Evaluation.Designer.cs">
+      <DependentUpon>UC_Evaluation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_QualityDashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_QualityDashboard.Designer.cs">
+      <DependentUpon>UC_QualityDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_QualityForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_QualityForm.Designer.cs">
+      <DependentUpon>UC_QualityForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_FormationCSC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_FormationCSC.Designer.cs">
+      <DependentUpon>UC_FormationCSC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_InfoSheet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_InfoSheet.Designer.cs">
+      <DependentUpon>UC_InfoSheet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_Intersets.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_Intersets.Designer.cs">
+      <DependentUpon>UC_Intersets.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_Language.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_Language.Designer.cs">
+      <DependentUpon>UC_Language.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_Leave.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_Leave.Designer.cs">
+      <DependentUpon>UC_Leave.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_Medecin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_Medecin.Designer.cs">
+      <DependentUpon>UC_Medecin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_Military.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_Military.Designer.cs">
+      <DependentUpon>UC_Military.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_MyAccount.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_MyAccount.Designer.cs">
+      <DependentUpon>UC_MyAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_NotifFRec.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_NotifFRec.Designer.cs">
+      <DependentUpon>UC_NotifFRec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_ProfStudy.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_ProfStudy.Designer.cs">
+      <DependentUpon>UC_ProfStudy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_Projects.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_Projects.Designer.cs">
+      <DependentUpon>UC_Projects.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_QualiteHSE.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_QualiteHSE.Designer.cs">
+      <DependentUpon>UC_QualiteHSE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_Quality.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_Quality.Designer.cs">
+      <DependentUpon>UC_Quality.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_QualityAM.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_QualityAM.Designer.cs">
+      <DependentUpon>UC_QualityAM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_QualityCert.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_QualityCert.Designer.cs">
+      <DependentUpon>UC_QualityCert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_QualityCO.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_QualityCO.Designer.cs">
+      <DependentUpon>UC_QualityCO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_QualityDG.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_QualityDG.Designer.cs">
+      <DependentUpon>UC_QualityDG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_QualityMG.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_QualityMG.Designer.cs">
+      <DependentUpon>UC_QualityMG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_QualityPR.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_QualityPR.Designer.cs">
+      <DependentUpon>UC_QualityPR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_QualityRH.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_QualityRH.Designer.cs">
+      <DependentUpon>UC_QualityRH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_RecruitFile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_RecruitFile.Designer.cs">
+      <DependentUpon>UC_RecruitFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_RequestOrigine.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_RequestOrigine.Designer.cs">
+      <DependentUpon>UC_RequestOrigine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_Rewards.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_Rewards.Designer.cs">
+      <DependentUpon>UC_Rewards.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_Software.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_Software.Designer.cs">
+      <DependentUpon>UC_Software.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_StudyLevel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_StudyLevel.Designer.cs">
+      <DependentUpon>UC_StudyLevel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_Surveillance.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_Surveillance.Designer.cs">
+      <DependentUpon>UC_Surveillance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_Trainings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_Trainings.Designer.cs">
+      <DependentUpon>UC_Trainings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_TrialPeriod.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_TrialPeriod.Designer.cs">
+      <DependentUpon>UC_TrialPeriod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_UsersManage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_UsersManage.Designer.cs">
+      <DependentUpon>UC_UsersManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_WorkAttes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_WorkAttes.Designer.cs">
+      <DependentUpon>UC_WorkAttes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_WorkCert.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_WorkCert.Designer.cs">
+      <DependentUpon>UC_WorkCert.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Forms\Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_Absence1.resx">
+      <DependentUpon>Form_Absence1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_Absences.resx">
+      <DependentUpon>Form_Absences.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_Attend.resx">
+      <DependentUpon>Form_Attend.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_AttesCert.resx">
+      <DependentUpon>Form_AttesCert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_Conge.resx">
+      <DependentUpon>Form_Conge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_Contract.resx">
+      <DependentUpon>Form_Contract.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_CRRenseign.resx">
+      <DependentUpon>Form_CRRenseign.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_Emp.resx">
+      <DependentUpon>Form_Emp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_FPoste.resx">
+      <DependentUpon>Form_FPoste.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_Justify.resx">
+      <DependentUpon>Form_Justify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_ModQualite.resx">
+      <DependentUpon>Form_ModQualite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_Module.resx">
+      <DependentUpon>Form_Module.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_QualiteUpdate.resx">
+      <DependentUpon>Form_QualiteUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_QualityAM.resx">
+      <DependentUpon>Form_QualityAM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_Recruit.resx">
+      <DependentUpon>Form_Recruit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_RecruitRequest.resx">
+      <DependentUpon>Form_RecruitRequest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_SearchEmp.resx">
+      <DependentUpon>Form_SearchEmp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_SearchEmp1.resx">
+      <DependentUpon>Form_SearchEmp1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_Service.resx">
+      <DependentUpon>Form_Service.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_SignUp.resx">
+      <DependentUpon>Form_SignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_WorkCet.resx">
+      <DependentUpon>Form_WorkCet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ResetPW.resx">
+      <DependentUpon>ResetPW.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ResetPW1.resx">
+      <DependentUpon>ResetPW1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UserControls\UC_Absences.resx">
+      <DependentUpon>UC_Absences.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_ActivityJournal.resx">
+      <DependentUpon>UC_ActivityJournal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_Alerts.resx">
+      <DependentUpon>UC_Alerts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_Attendance.resx">
+      <DependentUpon>UC_Attendance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_Career.resx">
+      <DependentUpon>UC_Career.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_CivilState.resx">
+      <DependentUpon>UC_CivilState.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_Conge.resx">
+      <DependentUpon>UC_Conge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_Contract.resx">
+      <DependentUpon>UC_Contract.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_ContractInfo.resx">
+      <DependentUpon>UC_ContractInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_DashboardAttes.resx">
+      <DependentUpon>UC_DashboardAttes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_DashboardCert.resx">
+      <DependentUpon>UC_DashboardCert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_DashboardCong.resx">
+      <DependentUpon>UC_DashboardCong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_DashboardFicheRenseign.resx">
+      <DependentUpon>UC_DashboardFicheRenseign.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_Discipline.resx">
+      <DependentUpon>UC_Discipline.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_DoYouKnow.resx">
+      <DependentUpon>UC_DoYouKnow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_DRDashboard.resx">
+      <DependentUpon>UC_DRDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_Employe.resx">
+      <DependentUpon>UC_Employe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_Emprovement.resx">
+      <DependentUpon>UC_Emprovement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_EndContract.resx">
+      <DependentUpon>UC_EndContract.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_Evaluation.resx">
+      <DependentUpon>UC_Evaluation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_QualityDashboard.resx">
+      <DependentUpon>UC_QualityDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_QualityForm.resx">
+      <DependentUpon>UC_QualityForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_FormationCSC.resx">
+      <DependentUpon>UC_FormationCSC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_InfoSheet.resx">
+      <DependentUpon>UC_InfoSheet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_Intersets.resx">
+      <DependentUpon>UC_Intersets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_Language.resx">
+      <DependentUpon>UC_Language.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_Leave.resx">
+      <DependentUpon>UC_Leave.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_Medecin.resx">
+      <DependentUpon>UC_Medecin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_Military.resx">
+      <DependentUpon>UC_Military.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_MyAccount.resx">
+      <DependentUpon>UC_MyAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_NotifFRec.resx">
+      <DependentUpon>UC_NotifFRec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_ProfStudy.resx">
+      <DependentUpon>UC_ProfStudy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_Projects.resx">
+      <DependentUpon>UC_Projects.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_QualiteHSE.resx">
+      <DependentUpon>UC_QualiteHSE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_Quality.resx">
+      <DependentUpon>UC_Quality.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_QualityAM.resx">
+      <DependentUpon>UC_QualityAM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_QualityCert.resx">
+      <DependentUpon>UC_QualityCert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_QualityCO.resx">
+      <DependentUpon>UC_QualityCO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_QualityDG.resx">
+      <DependentUpon>UC_QualityDG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_QualityMG.resx">
+      <DependentUpon>UC_QualityMG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_QualityPR.resx">
+      <DependentUpon>UC_QualityPR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_QualityRH.resx">
+      <DependentUpon>UC_QualityRH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_RecruitFile.resx">
+      <DependentUpon>UC_RecruitFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_RequestOrigine.resx">
+      <DependentUpon>UC_RequestOrigine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_Rewards.resx">
+      <DependentUpon>UC_Rewards.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_Software.resx">
+      <DependentUpon>UC_Software.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_StudyLevel.resx">
+      <DependentUpon>UC_StudyLevel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_Surveillance.resx">
+      <DependentUpon>UC_Surveillance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_Trainings.resx">
+      <DependentUpon>UC_Trainings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_TrialPeriod.resx">
+      <DependentUpon>UC_TrialPeriod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_UsersManage.resx">
+      <DependentUpon>UC_UsersManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_WorkAttes.resx">
+      <DependentUpon>UC_WorkAttes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_WorkCert.resx">
+      <DependentUpon>UC_WorkCert.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\4696645_alert_audio_bell_notification_sound_icon.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\logo expertise.png" />
+    <Content Include="logo-expertise.ico" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
