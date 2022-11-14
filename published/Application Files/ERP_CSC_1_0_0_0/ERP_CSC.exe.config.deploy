@@ -1,0 +1,1188 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+    <configSections>
+        <sectionGroup name="userSettings" type="System.Configuration.UserSettingsGroup, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" >
+            <section name="GRHApp.Properties.Settings" type="System.Configuration.ClientSettingsSection, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" allowExeDefinition="MachineToLocalUser" requirePermission="false" />
+        </sectionGroup>
+    </configSections>
+    <startup useLegacyV2RuntimeActivationPolicy="true"> 
+        <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.7.2" />
+    </startup>
+    <userSettings>
+        <GRHApp.Properties.Settings>
+            <setting name="mat" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="nom" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="prenom" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="nomFille" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="dateNai" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="lieuNai" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="sitFam" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="nationalite" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="adresse" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="mobile" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="prePere" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="nomMere" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="groupSang" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="nomFrere" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="nomConj" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="dateMar" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="profConj" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="nomEnfs" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="nomComp" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="numSec" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="cartNatio" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="delivPar" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="dateDeliv" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="profPere" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="profMere" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="degage" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="dateImmo" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="sursiDu" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="sursiAu" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="apteInco" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="eta1" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="eta2" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="eta3" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="eta4" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="spe1" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="spe2" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="spe3" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="spe4" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="per1" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="per2" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="per3" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="per4" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="dip1" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="dip2" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="dip3" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="dip4" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="annObt1" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="annObt2" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="annObt3" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="annObt4" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="etab1" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="etab2" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="etab3" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="etab4" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="spec1" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="spec2" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="spec3" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="spec4" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="peri1" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="peri2" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="peri3" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="peri4" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="dipl1" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="dipl2" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="dipl3" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="dipl4" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="annObte1" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="annObte2" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="annObte3" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="annObte4" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="etabl1" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="etabl2" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="etabl3" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="etabl4" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="speci1" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="speci2" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="speci3" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="speci4" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="perio1" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="perio2" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="perio3" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="perio4" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="diplo1" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="diplo2" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="diplo3" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="diplo4" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="annObten1" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="annObten2" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="annObten3" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="annObten4" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="fre" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="ara" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="ang" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="all" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="aut" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="autLang" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="log1For" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="log2For" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="log3For" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="log4For" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="log1Niv" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="log2Niv" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="log3Niv" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="log4Niv" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="log1" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="log2" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="log3" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="log4" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="trax" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="inter1" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="inter2" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="inter3" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="inter4" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="inter5" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="inter6" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="inter7" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="inter8" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="choi" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="autr" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="nom1" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="pren1" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="fonc1" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="nom2" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="pren2" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="fonc2" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="testMed" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="testProf" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="dateCont" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="fonc" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="service" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="dateEngage" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="salaire" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="iep" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="panier" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="trans" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="saliss" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="indemnV" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="deplace" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="danger" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="phone" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="penibilite" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="insalub" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="fidelite" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="pri" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="prc" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="ppi" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="iq" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="mission" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="ifri" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="autre" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="exe1" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="exe2" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="exe3" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="exe4" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="exe5" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="the1" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="the2" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="the3" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="the4" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="the5" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="lieuF1" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="lieuF2" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="lieuF3" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="lieuF4" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="lieuF5" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="dure1" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="dure2" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="dure3" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="dure4" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="dure5" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="dateF1" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="dateF2" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="dateF3" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="dateF4" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="dateF5" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="obj1" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="obj2" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="obj3" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="obj4" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="obj5" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="qual1" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="qual2" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="qual3" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="qual4" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="natS1" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="natS2" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="natS3" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="natS4" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="dateS1" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="dateS2" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="dateS3" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="dateS4" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="motif1" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="motif2" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="motif3" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="motif4" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="obser1" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="obser2" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="obser3" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="obser4" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="etape" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="etapSur1" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="etapSur2" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="etapSur3" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="etapSur4" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="etapSur5" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="etapSur6" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="etapSur7" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="dateSur1" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="dateSur2" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="dateSur3" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="dateSur4" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="dateSur5" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="dateSur6" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="dateSur7" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="tech1" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="tech2" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="tech3" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="tech4" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="tech5" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="tech6" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="tech7" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="not1" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="not2" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="not3" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="not4" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="not5" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="not6" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="not7" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="rema1" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="rema2" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="rema3" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="rema4" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="rema5" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="rema6" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="rema7" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="exer1" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="exer2" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="exer3" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="exer4" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="exer5" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="exer6" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="exer7" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="notGlob1" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="notGlob2" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="notGlob3" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="notGlob4" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="notGlob5" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="notGlob6" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="notGlob7" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="appr1" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="appr2" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="appr3" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="appr4" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="appr5" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="appr6" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="appr7" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="exerc1" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="exerc2" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="exerc3" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="exerc4" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="exerc5" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="exerc6" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="exerc7" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="promo1" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="promo2" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="promo3" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="promo4" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="promo5" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="promo6" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="promo7" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="reaff1" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="reaff2" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="reaff3" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="reaff4" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="reaff5" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="reaff6" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="reaff7" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="form1" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="form2" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="form3" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="form4" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="form5" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="form6" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="form7" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="autre1" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="autre2" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="autre3" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="autre4" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="autre5" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="autre6" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="autre7" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="contract" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="dateRenouv" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="dateNotif" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="nRef" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="emp1" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="emp2" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="emp3" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="emp4" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="job1" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="job2" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="job3" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="job4" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="dateDeb1" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="dateDeb2" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="dateDeb3" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="dateDeb4" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="dateFin1" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="dateFin2" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="dateFin3" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="dateFin4" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="motifDep1" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="motifDep2" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="motifDep3" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="motifDep4" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="periodEssai" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="dateNotifEssai" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="refEssai" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="dateDoc" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="userName" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="id_NivSco" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="id_NivSco1" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="id_NivSco2" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="id_NivSco3" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="id_EnsProf" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="id_EnsProf1" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="id_EnsProf2" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="id_EnsProf3" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="id_Stag" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="id_Stag1" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="id_Stag3" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="id_Stag2" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="id_Carr" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="id_Carr1" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="id_Carr2" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="id_Carr3" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="id_Log" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="id_Log1" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="id_Log2" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="id_Log3" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="id_Inter" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="id_inter1" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="id_Inter2" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="id_Inter3" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="id_Inter4" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="id_Inter5" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="id_Inter6" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="id_Inter7" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="id_Conn" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="id_Conn1" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="id_Form" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="id_Form1" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="id_Form2" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="id_Form3" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="id_Form4" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="id_Desi" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="id_Desi1" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="id_Desi2" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="id_Desi3" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="id_Surve" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="id_Surve1" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="id_Surve2" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="id_Surve3" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="id_Surve4" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="id_Surve5" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="id_Surve6" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="id_Eval" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="id_Eval1" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="id_Eval2" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="id_Eval3" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="id_Eval4" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="id_Eval5" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="id_Eval6" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="id_Ame" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="id_Ame1" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="id_Ame2" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="id_Ame3" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="id_Ame4" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="id_Ame5" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="id_Ame6" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="fichRec" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="fichRen" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="attTrav" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="certTrav" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="titCong" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="etatCont" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="dateDep" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="categDep" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="causeDep" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="othCauseDep" serializeAs="String">
+                <value />
+            </setting>
+        </GRHApp.Properties.Settings>
+    </userSettings>
+</configuration>

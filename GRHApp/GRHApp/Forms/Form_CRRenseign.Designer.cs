@@ -33,7 +33,7 @@ namespace GRHApp.Forms
             this.pnlRight = new System.Windows.Forms.Panel();
             this.pnlLeft = new System.Windows.Forms.Panel();
             this.pnlBottom = new System.Windows.Forms.Panel();
-            this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
+            //this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
             this.SuspendLayout();
             // 
             // pnlTop
@@ -74,22 +74,22 @@ namespace GRHApp.Forms
             // 
             // crystalReportViewer1
             // 
-            this.crystalReportViewer1.ActiveViewIndex = -1;
-            this.crystalReportViewer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.crystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.crystalReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.crystalReportViewer1.Location = new System.Drawing.Point(5, 5);
-            this.crystalReportViewer1.Name = "crystalReportViewer1";
-            this.crystalReportViewer1.Size = new System.Drawing.Size(633, 596);
-            this.crystalReportViewer1.TabIndex = 2;
-            this.crystalReportViewer1.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
+            //this.crystalReportViewer1.ActiveViewIndex = -1;
+            //this.crystalReportViewer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            //this.crystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default;
+            //this.crystalReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            //this.crystalReportViewer1.Location = new System.Drawing.Point(5, 5);
+            //this.crystalReportViewer1.Name = "crystalReportViewer1";
+            //this.crystalReportViewer1.Size = new System.Drawing.Size(633, 596);
+            //this.crystalReportViewer1.TabIndex = 2;
+            //this.crystalReportViewer1.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
             // 
             // Form_CRRenseign
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(643, 606);
-            this.Controls.Add(this.crystalReportViewer1);
+            //this.Controls.Add(this.crystalReportViewer1);
             this.Controls.Add(this.pnlRight);
             this.Controls.Add(this.pnlLeft);
             this.Controls.Add(this.pnlBottom);
@@ -108,6 +108,6 @@ namespace GRHApp.Forms
         private System.Windows.Forms.Panel pnlRight;
         private System.Windows.Forms.Panel pnlLeft;
         private System.Windows.Forms.Panel pnlBottom;
-        private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
+        //private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
     }
 }
